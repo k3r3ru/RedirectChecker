@@ -39,6 +39,6 @@ try:
     out = open('out.txt', 'x')
     for url in outUrls:
         out.write(url+'\n')
+    out.close()
 except:
     print('Can\'t open output file for writing.')
-out.close()
