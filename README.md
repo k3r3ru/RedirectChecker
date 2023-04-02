@@ -6,3 +6,5 @@ The script only takes a positional argument, which is the path of the file conta
 The program substitutes the provided URLs with the respective redirected URLs, if any are detected, and writes the output to a file called "out.txt".
 
 Any duplicates are removed.
+
+The requests library is needed for it to work.
