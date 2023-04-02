@@ -14,6 +14,7 @@ def redirCheck(url):
         r = requests.get(url, allow_redirects=False, timeout=5)
     except:
         print(f'Connection error on {url} - Skipping...' )
+        return
     
     redir = r.headers.get('location')
     if redir is not None and url != redir:
